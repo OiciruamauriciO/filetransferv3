@@ -1,0 +1,13 @@
+{
+    "file": {
+        "typeCode": "INVOICE",
+        "fileExtractedData": "{\n  \"taxType\": \"33\"\n}"
+    },
+    "validationResults": [
+        {
+            "typeCode": "ASSIGNED_TO_BANK",
+            "result": "OK",
+            "reasonDetails": "Success"
+        }
+    ]
+}

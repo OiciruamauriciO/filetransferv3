@@ -1,0 +1,12 @@
+{
+    "file": {
+        "typeCode": "INVOICE",
+        "fileExtractedData": "{\n  \"taxType\": \"33\"\n}"
+    },
+    "validationResults": [
+        {
+            "typeCode": "INTERNAL_VALIDATION",
+            "result": "OK"
+        }
+    ]
+}

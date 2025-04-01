@@ -1,0 +1,22 @@
+{
+	"center": {
+		"centerId": "0003",
+		"subtype": "01",
+		"shortName": "ES"
+	},
+	"supplier": {
+		"supplierId": "965228802"
+	},
+	"customer": {
+		"customerId": "DAV0101319M6"
+	},
+	"file": {
+		"typeCode": "INVOICE",
+		"fileExtractedData": "{\n  \"taxType\": \"33\"\n}"
+	},
+	"validationResults": [
+		{
+			"typeCode": "INTERNAL_VALIDATION"
+		}
+	]
+}

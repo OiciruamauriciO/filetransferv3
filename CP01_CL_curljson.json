@@ -1,0 +1,34 @@
+curl --request POST \
+  --url https://openbanking.santander-homo.cl/factoring/trade_and_working_capital_documents/v1/trade_and_working_capital_documents/files/77773/validate \
+  --header 'authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjIwMjMuMTIuMjAta2V5In0.eyJzY29wZSI6WyJJbnRlcm5ldF9DbGllbnRlc19QZXJzb25hIl0sImlzcyI6ImxiOi8vZHNzLWlhbSIsImV4cCI6MTc0MzUxODEzNSwianRpIjoickN1aFZPREdsR3lLS3VsUFV1dnZ0bDhCWkJzIiwiY2xpZW50X2lkIjoibWR6V0xiM3JudW1jN0VMdzZsSGNxQkNyYVBIRTU0THMiLCJhdXRob3JpdGllcyI6WyJST0xFX0ludGVybmV0X0NsaWVudGVzX1BlcnNvbmEiXSwidXNlcm5hbWUiOiJtZHpXTGIzcm51bWM3RUx3NmxIY3FCQ3JhUEhFNTRMcyJ9.TnRWlTw38okx7bI57pJD8011sOYwhK-jwgPC09vJna4DT7Fb_fBAw_stJzFMFDqssr9TNSH5XyxUDIiH4LIKafE8yitlj01r_ZDW8NoY6UrtiKsodNL5OP8HF77yjXoFpILug_zPYCo1JzYrvr6qu7uDLrLT5WsYH-qtWz9HckCVmaeDcRy3Tmj0llgmgXh-4Vvs5ZQwoWLD36i4xMuXyxBFaN6KDnk0B9yCNL3wSgijxQCMbyZhSUoxPqBvywPpJdyX5h-r65S74RILXphFP0RX9Z-1_38kiSw24ryB9Bwor_dDl3-5rtH51xT5dkxQfbo7LABTGXKrAExpvDBJHg' \
+  --header 'content-type: application/json' \
+  --header 'x-santander-client-id: mdzWLb3rnumc7ELw6lHcqBCraPHE54Ls' \
+  --cookie 'dtCookie=v_4_srv_9_sn_551639EBEF38DD47BF55251A874EF921_perc_100000_ol_0_mul_1_app-3Aea7c4b59f27d43eb_0; _abck=FEDE7F6E92F3E0A13710B547833578FF~-1~YAAQQx3VF6bN6qyVAQAARGOZ8Q3UbeqsOKxV%2B1MnX4zFJyijWUKnkanQdw97jIFwc8ZM9Ei8rpSx0ZSxIbxdJOmLQpoKOMeavEXmLi%2Bx7jh%2Bu4AwTEQnPYmjqf3oYX79APZktQJTQI2xTdllNT6wTubxOlcHu1IWqYRqXh%2FcCqcPzkgfqxpq0A6xMuZ0V%2BcCmszbhGFmEx8Xo5ExtGob%2Fn29MCFkVU6OmbmehP%2F4XAzRFiIrvNeCKpyrJObQGvisPCdLpNTu1z%2Fe1KE%2BNrYUyYwA7GyYFKZnL2GQFb7rfJKuTTG2jcZWRB%2F28tU2x7dytKcYUcsdILCPT44xKxbbCvagkQvTjvpn9TgxqV5LjW7SvCSuL7k8ys3J8q6mKGUiBBFec66gG4yyUi1s3j1pyAXKVKlecAymBAVSfGfiFFx0yxMBoNtLBtw3GcmEHTw%3D~-1~-1~-1' \
+  --data '{
+	"center": {
+		"centerId": "0003",
+		"subtype": "01",
+		"shortName": "CL"
+	},
+	"supplier": {
+		"supplierId": "965228802"
+	},
+	"customer": {
+		"customerId": "DAV0101319M6"
+	},
+	"file": {
+		"typeCode": "INVOICE",
+		"fileExtractedData": "{\n  \"taxType\": \"33\"\n}"
+	},
+	"validationResults": [
+		{
+			"typeCode": "INTERNAL_VALIDATION"
+		},
+		{
+			"typeCode": "ASSIGNED_TO_BANK"
+		},
+		{
+			"typeCode": "LOCAL_TAX_AGENCY_VALIDATION"
+		}
+	]
+}'

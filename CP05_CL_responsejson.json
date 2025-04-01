@@ -1,0 +1,22 @@
+{
+    "file": {
+        "typeCode": "INVOICE",
+        "fileExtractedData": "{\n  \"taxType\": \"33\"\n}"
+    },
+    "validationResults": [
+        {
+            "typeCode": "INTERNAL_VALIDATION",
+            "result": "OK",
+            "reasonDetails": "Success"
+        },
+        {
+            "typeCode": "ASSIGNED_TO_BANK",
+            "result": "KO",
+            "reasonDetails": "Invoice already assigned to other financial entity"
+        },
+        {
+            "typeCode": "LOCAL_TAX_AGENCY_VALIDATION",
+            "result": "KO"
+        }
+    ]
+}
