@@ -1,0 +1,33 @@
+curl --location --request POST 'https://openbanking.santander-homo.cl/factoring/trade_and_working_capital_documents/v1/trade_and_working_capital_documents/files/77773/validate' \
+--header 'authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjIwMjMuMTIuMjAta2V5In0.eyJzY29wZSI6WyJJbnRlcm5ldF9DbGllbnRlc19QZXJzb25hIl0sImlzcyI6ImxiOi8vZHNzLWlhbSIsImV4cCI6MTc0MzYyNjQxMiwianRpIjoidzB5aEhOc3QxSlJTalItTHdPU2huelFVWmljIiwiY2xpZW50X2lkIjoibWR6V0xiM3JudW1jN0VMdzZsSGNxQkNyYVBIRTU0THMiLCJhdXRob3JpdGllcyI6WyJST0xFX0ludGVybmV0X0NsaWVudGVzX1BlcnNvbmEiXSwidXNlcm5hbWUiOiJtZHpXTGIzcm51bWM3RUx3NmxIY3FCQ3JhUEhFNTRMcyJ9.WB9TRwfQLpVEwpFs3DGduyO-63hzFcuiAmqobMtGuR-JAo0cDZlfys_Za3-4GAaVwYs5x_oChQ1-8ttquXmmqcY6cYBr2prrW1S636Fj-1dqeFD-NPPZCZWxx1yn-CtJBCuMmMtnWWgZX5r-3Or5qSXasqrsHiT0N6IVBQyClS1go36qXiiUqfnfKECTTME7WXBAsg3tkfNoOcdcwAu4IioVvp80gPPsOjZLS5p-JGijUQnJJS1W4iF7mqOMAH1j-BSVTCfaPHs1TmErxO2j1NyjhbD0CH3JrCmjz1gL-UrqKiw9KPc1DaPhevoEiUpoUTaGGPHBeOK824DKjeKYAQ' \
+--header 'content-type: application/json' \
+--header 'x-santander-client-id: mdzWLb3rnumc7ELw6lHcqBCraPHE54Ls' \
+--header 'Cookie: e32455a9435bd813a36973c091e56b96=2556be5e85b565f37a9f126ecbc3fe08' \
+--data-raw '{
+	"center": {
+		"centerId": "0003",
+		"subtype": "01",
+		"shortName": "CL"
+	},
+	"supplier": {
+		"supplierId": "965228802"
+	},
+	"customer": {
+		"customerId": "@#$123abc"
+	},
+	"file": {
+		"typeCode": "INVOICE",
+		"fileExtractedData": "{\n  \"taxType\": \"33\"\n}"
+	},
+	"validationResults": [
+		{
+			"typeCode": "INTERNAL_VALIDATION"
+		},
+		{
+			"typeCode": "ASSIGNED_TO_BANK"
+		},
+		{
+			"typeCode": "LOCAL_TAX_AGENCY_VALIDATION"
+		}
+	]
+}'

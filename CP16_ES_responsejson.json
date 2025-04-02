@@ -1,0 +1,10 @@
+{
+    "errors": [
+        {
+            "code": 400,
+            "message": "The request could not be processed, please try again later.",
+            "level": "BadRequest",
+            "description": "ServerError"
+        }
+    ]
+}
